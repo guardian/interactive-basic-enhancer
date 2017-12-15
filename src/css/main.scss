@@ -1,32 +1,56 @@
 @import "mq";
-@import "fonts";
 
-// Uncomment for embeds
-//@import "embed";
+$color-1:#197caa;
+$color-2:#aad8f1;
 
-// Uncomment for full screen (including immersive article main media)
-//@import "fullscreen";
+b, strong, i, cite, em, var, address, dfn {
+    padding: 10px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    display: block !important;
+    clear:both !important;
+    font-family: "Guardian Text Sans Web", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    border-left: 10px solid $color-1 !important;
 
-p {
-    background-color: grey;
 }
 
-.content__article-body {
-    background-color: red;
-
-    h2 {
-        background-color: green;
-    }
-
-    p {
+b, strong, i, cite, em, var, address, dfn {
+        
     
-        strong {
-        background-color: yellow;
-        }  
-        em {
-        background-color: orange;
-         }
+}
+i, cite, em, var, address, dfn {
 
+    font-style:normal !important;
+
+    @include mq(tablet){
+        
     }
 
+    border-left: 10px solid $color-2 !important;
+    
+
+}
+
+h2{
+    padding: 0 !important;
+    background-color: none !important;
+    b, strong {
+        padding: 0 !important;
+        background-color: none !important;
+    }
+}
+
+.green-highlight{
+    background-color: $color-1;
+    color:#EFEFEF !important;
+}
+
+.maltby-highlight{
+    background-color: $color-2;
+}
+
+.green-highlight, .maltby-highlight{
+    padding: 2px 6px;
 }
