@@ -13,13 +13,14 @@ s.rel = 'stylesheet';
 s.href =  process.env.PATH + '/main.css';
 parentdoc.head.appendChild(s);
 
-	var sourceHTML = document.querySelector('.content__article-body').innerHTML;
+    console.log('here we go')
+    var sourceHTML = parentdoc.querySelector('.content__article-body').innerHTML;
+    console.log(sourceHTML);
     var found = sourceHTML.search("the Commons computers of Damian Green,");
     var resHTML = sourceHTML.split("the Commons computers of Damian Green");
     resHTML = resHTML.join("<span class='green-highlight'>the Commons computers of Damian Green</span>");
     var resHTML = resHTML.split("Green meets Kate Maltby");
     resHTML = resHTML.join("Green meets <span class='maltby-highlight'>Kate Maltby</span>")
    
-    document.querySelector('.content__article-body').innerHTML = resHTML;
+    parentdoc.querySelector('.content__article-body').innerHTML = resHTML;
 
-    console.log(sourceHTML, resHTML)
