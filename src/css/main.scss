@@ -54,3 +54,15 @@ h2{
 .green-highlight, .maltby-highlight{
     padding: 2px 6px;
 }
+
+.membership__message-text strong{
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block !important;
+    clear:both !important;
+    font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;
+    font-size: 18px !important;
+    font-weight:bold !important;
+    border-left: none !important;
+}
