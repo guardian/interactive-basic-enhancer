@@ -1,0 +1,32 @@
+@import "mq";
+@import "fonts";
+
+// Uncomment for embeds
+//@import "embed";
+
+// Uncomment for full screen (including immersive article main media)
+//@import "fullscreen";
+
+p {
+    background-color: grey;
+}
+
+.content__article-body {
+    background-color: red;
+
+    h2 {
+        background-color: green;
+    }
+
+    p {
+    
+        strong {
+        background-color: yellow;
+        }  
+        em {
+        background-color: orange;
+         }
+
+    }
+
+}
